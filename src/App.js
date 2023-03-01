@@ -13,9 +13,9 @@ export default function App() {
   if (isLoading) return "Loading...";
   return (
     <div>
-      <h1>{data.name}</h1>
-      <h1>{data}</h1>
-      <h1>{data['Город:']}</h1>
+      <h1>{data["Город"]}</h1>
+      <h1>{data["Пол"]}</h1>
+
       {/* <p>{data.description}</p> */}
       {/* <strong>👁 {data.subscribers_count}</strong>{" "} */}
       {/* <strong>✨ {data.stargazers_count}</strong>{" "} */}
