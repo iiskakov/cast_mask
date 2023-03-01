@@ -5,7 +5,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function App() {
   const { data, error, isLoading } = useSWR(
-    "https://cast-parser.onrender.com/api/parse_details?url=https://cast.kz/list/Ar4Eil/1234",
+    "https://flask.onrender.com/",
     fetcher
   );
 
