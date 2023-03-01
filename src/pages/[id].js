@@ -1,7 +1,7 @@
 import React from "react";
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { Table } from 'nextui'
+import { Table } from '@nextui-org/react'
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
