@@ -7,7 +7,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function App() {
   const router = useRouter();
   const { id } = router.query;
-  const baseUrl = "https://cast.kz/list/";
+  const baseUrl = "https://cast.kz/";
   const formattedId = id?.startsWith("/") ? id.substring(1) : id;
 
   const { data, error, isLoading } = useSWR(
